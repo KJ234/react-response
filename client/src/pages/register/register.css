@@ -1,0 +1,220 @@
+.register,
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(61, 106, 178);
+  background: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+  padding: 30px;
+}
+
+
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+.container{
+  position: relative;
+  max-width: 100vh;
+  width: 89vh;
+  height: max-content;
+  background: #fff;
+  padding: 40px 30px;
+  perspective: 2700px;
+  box-shadow: 20px 20px 20px black;
+
+}
+
+
+
+.container .cover{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  background-image: url(./logo-removebg-preview.png);
+}
+
+
+.register .cover {
+  background-image: url(./undraw_referral_4ki4.png);
+  background-size: 20cm;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+.container .cover::before,
+.container .cover::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(61, 106, 178);
+  background: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+  opacity: 0.5;
+  z-index: 12;
+}
+.container .cover::after{
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.container .forms{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-position: 10cm;
+  background-size: 100px;
+}
+.form-content .login-form,
+.form-content .signup-form{
+  width: calc(100% / 2 - 25px);
+}
+.forms .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+}
+.forms .signup-form  .title:before{
+  width: 20px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 60px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+
+}
+
+.form-content .input-box i{
+  position: absolute;
+  color: #3e5dc3;
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top: 40px;
+}
+.forms .form-content .button input{
+  color: #fff;
+  background: rgb(61, 106, 178);
+  background: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+  border-radius: 10px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+}
+
+#login-icon {
+  font-size: 8vh;
+  color: rgb(53, 75, 142);
+  margin: 20px;
+}
+
+.forms .form-content .button input:hover{
+  background: rgb(61, 106, 178);
+  background: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+}
+.forms .form-content label{
+
+  color: linear-gradient(90deg, rgba(61, 106, 178, 1) 0%, rgba(31, 49, 99, 1) 0%, rgba(61, 106, 178, 1) 100%);
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text{
+  text-align: center;
+  margin-top: 25px;
+}
+.container #flip{
+  display: none;
+}
+
+
+@media (max-width: 730px) {
+  .container .cover{
+    display: none;
+  }
+
+  .login .container{
+    margin-right: 50px;
+   }
+
+   .register .container {
+     margin-right: 50px;
+   }
+
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+  .container #flip:checked ~ .forms .signup-form{
+    display: block;
+  }
+  .container #flip:checked ~ .forms .login-form{
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@cubejs-client/core": "^0.31.0",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.17",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.1.6",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.2",
+    "chart.js": "^4.0.1",
+    "chartjs-adapter-date-fns": "^2.0.1",
+    "chartjs-adapter-luxon": "^1.2.1",
+    "chartjs-adapter-moment": "^1.0.1",
+    "date-fns": "^2.29.3",
+    "env-cmd": "^10.1.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "luxon": "^3.1.0",
+    "mdb-react-ui-kit": "^5.0.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-bootstrap": "^2.6.0",
+    "react-chartjs-2": "^5.0.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.1",
+    "react-icons": "^4.6.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-icons": "^1.1.0",
+    "react-pro-sidebar": "^1.0.0-alpha.9",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
+    "remixicon": "^2.5.0",
+    "remixicons": "^1.0.0",
+    "serve": "^14.1.2",
+    "use-history": "^1.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "faker": "^6.6.6",
+    "jest": "^27.5.1"
+  }
+}
